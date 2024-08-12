@@ -1,17 +1,17 @@
 document.getElementById("theme-toggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-    this.textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark');
-      document.getElementById("theme-toggle").textContent = "Light";
-    }
-  });
+document.body.classList.toggle("dark");
+this.textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
+localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+});
 
-  <!DOCTYPE html>
+document.addEventListener("DOMContentLoaded", function () {
+if (localStorage.getItem('theme') === 'dark') {
+document.body.classList.add('dark');
+document.getElementById("theme-toggle").textContent = "Light";
+}
+});
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,24 +41,30 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
             <h1 class="text-3xl dark:text-black">Hi! <span class="wave">👋</span> my name is</h1>
             <h2 class="text-5xl text-green-400 my-2">Bibek Timsina</h2>
             <p class="description text-2xl dark:text-black">I craft software solutions</p>
-            <p class="mt-4 dark:text-black">I'm a software engineer based in Kathmandu, Nepal. I love building things for the web.</p>
+            <p class="mt-4 dark:text-black">I'm a software engineer based in Kathmandu, Nepal. I love building things
+                for the web.</p>
             <div class="icons flex space-x-4 mt-4">
                 <a href="#" class="dark:text-black"><i class="fab fa-github"></i></a>
                 <a href="#" class="dark:text-black"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="dark:text-black"><i class="fas fa-envelope"></i></a>
             </div>
-            <a href="#" class="resume-button inline-block mt-4 py-2 px-4 text-green-400 border-2 border-green-400 rounded-full dark:border-black dark:text-black">See my resume</a>
+            <a href="#"
+                class="resume-button inline-block mt-4 py-2 px-4 text-green-400 border-2 border-green-400 rounded-full dark:border-black dark:text-black">See
+                my resume</a>
         </section>
 
         <section class="publications max-w-4xl mx-auto my-16">
             <h2 class="text-3xl mb-8 dark:text-black">My recent publications</h2>
             <div class="publication bg-gray-800 p-4 rounded-lg mb-4 dark:bg-gray-300">
-                <h3 class="text-xl dark:text-black">Plagiarism Detection in Programming Assignments using Machine Learning</h3>
+                <h3 class="text-xl dark:text-black">Plagiarism Detection in Programming Assignments using Machine
+                    Learning</h3>
                 <p class="dark:text-black">Journal of Artificial Intelligence and Capsule Networks</p>
                 <p class="dark:text-black">Bibek Timsina, Nishesh Awale, Mitesh Pandey, Anish Dulal</p>
                 <div class="icons flex space-x-4 mt-2">
-                    <a href="https://scholar.google.com" target="_blank" class="dark:text-black"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://www.researchgate.net" target="_blank" class="dark:text-black"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://scholar.google.com" target="_blank" class="dark:text-black"><i
+                            class="fas fa-graduation-cap"></i></a>
+                    <a href="https://www.researchgate.net" target="_blank" class="dark:text-black"><i
+                            class="fab fa-researchgate"></i></a>
                     <a href="path/to/pdf" target="_blank" class="dark:text-black"><i class="fas fa-file-pdf"></i></a>
                 </div>
             </div>
@@ -72,9 +78,12 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
                     <h3 class="text-xl dark:text-black">Senior Software Engineer @ Growthzilla</h3>
                     <p class="text-sm text-gray-400 dark:text-gray-600"><i class="fas fa-map-marker-alt"></i> Remote</p>
                     <ul class="points list-disc list-inside mt-2 text-base dark:text-black">
-                        <li>Worked as a Senior Software Engineer and Project Manager to bring multiple products to life.</li>
-                        <li>Led product development for various projects including Digital Signage Solutions and Productivity Tools.</li>
-                        <li>Developed multiple internal CLI tools to streamline developer workflows and enhance productivity.</li>
+                        <li>Worked as a Senior Software Engineer and Project Manager to bring multiple products to life.
+                        </li>
+                        <li>Led product development for various projects including Digital Signage Solutions and
+                            Productivity Tools.</li>
+                        <li>Developed multiple internal CLI tools to streamline developer workflows and enhance
+                            productivity.</li>
                         <li>Managed full stack development, from database design to deployment.</li>
                     </ul>
                     <div class="tags flex flex-wrap mt-2">
@@ -91,22 +100,29 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
         <section class="blogs-section max-w-4xl mx-auto my-16">
             <h2 class="text-3xl text-left dark:text-black">My recent blogs</h2>
             <div class="blogs-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-                <a href="blog1.html" class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 1 Image" class="w-full h-40 object-cover">
+                <a href="blog1.html"
+                    class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 1 Image"
+                        class="w-full h-40 object-cover">
                     <div class="blog-content p-4">
-                        <h3 class="text-lg dark:text-black">Testing the limits of Supabase + Postgres in a serverless environment</h3>
+                        <h3 class="text-lg dark:text-black">Testing the limits of Supabase + Postgres in a serverless
+                            environment</h3>
                         <p class="text-sm text-gray-400 mt-2 dark:text-gray-600">Jul 2, 2024</p>
                     </div>
                 </a>
-                <a href="blog2.html" class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 2 Image" class="w-full h-40 object-cover">
+                <a href="blog2.html"
+                    class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 2 Image"
+                        class="w-full h-40 object-cover">
                     <div class="blog-content p-4">
                         <h3 class="text-lg dark:text-black">Using TRPC with Cloudflare Workers in a monorepo</h3>
                         <p class="text-sm text-gray-400 mt-2 dark:text-gray-600">Jun 30, 2024</p>
                     </div>
                 </a>
-                <a href="blog3.html" class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 3 Image" class="w-full h-40 object-cover">
+                <a href="blog3.html"
+                    class="blog-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Blog 3 Image"
+                        class="w-full h-40 object-cover">
                     <div class="blog-content p-4">
                         <h3 class="text-lg dark:text-black">Tips And Tricks to make Flutter Development easier</h3>
                         <p class="text-sm text-gray-400 mt-2 dark:text-gray-600">Oct 2, 2019</p>
@@ -114,46 +130,66 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
                 </a>
             </div>
             <div class="btn mt-8 text-center">
-                <a href="blogs.html" class="view-all-btn py-2 px-6 border border-green-400 rounded-lg text-green-400 hover:bg-green-400 hover:text-gray-900 transition-colors duration-200 dark:border-black dark:text-black dark:hover:bg-black dark:hover:text-white">View all</a>
+                <a href="blogs.html"
+                    class="view-all-btn py-2 px-6 border border-green-400 rounded-lg text-green-400 hover:bg-green-400 hover:text-gray-900 transition-colors duration-200 dark:border-black dark:text-black dark:hover:bg-black dark:hover:text-white">View
+                    all</a>
             </div>
         </section>
 
         <section class="projects-section max-w-4xl mx-auto my-16">
             <h2 class="text-3xl dark:text-black">My projects</h2>
             <div class="projects-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-                <a href="project1.html" class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 1 Image" class="w-full h-40 object-cover">
+                <a href="project1.html"
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 1 Image"
+                        class="w-full h-40 object-cover">
                     <div class="project-content p-4">
                         <h3 class="text-lg dark:text-black">e-Connect</h3>
-                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">React</span></p>
+                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span
+                                class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span
+                                class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">React</span></p>
                     </div>
                 </a>
-                <a href="project2.html" class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 2 Image" class="w-full h-40 object-cover">
+                <a href="project2.html"
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 2 Image"
+                        class="w-full h-40 object-cover">
                     <div class="project-content p-4">
                         <h3 class="text-lg dark:text-black">Flutter UI Templates</h3>
-                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Next.js</span></p>
+                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span
+                                class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span
+                                class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Next.js</span></p>
                     </div>
                 </a>
-                <a href="project3.html" class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 3 Image" class="w-full h-40 object-cover">
+                <a href="project3.html"
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 3 Image"
+                        class="w-full h-40 object-cover">
                     <div class="project-content p-4">
                         <h3 class="text-lg dark:text-black">TMDB Movies App</h3>
-                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">TMDB API</span></p>
+                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span
+                                class="bg-gray-700 py-1 px-2 rounded mr-2 dark:bg-gray-500">Flutter</span> <span
+                                class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">TMDB API</span></p>
                     </div>
                 </a>
-                <a href="project4.html" class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 4 Image" class="w-full h-40 object-cover">
+                <a href="project4.html"
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 4 Image"
+                        class="w-full h-40 object-cover">
                     <div class="project-content p-4">
                         <h3 class="text-lg dark:text-black">reWalls</h3>
-                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Flutter</span></p>
+                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span
+                                class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Flutter</span></p>
                     </div>
                 </a>
-                <a href="project5.html" class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 5 Image" class="w-full h-40 object-cover">
+                <a href="project5.html"
+                    class="project-card bg-gray-800 rounded-lg overflow-hidden text-white hover:scale-105 transition-transform duration-200 dark:bg-gray-300 dark:text-black">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/blog.png" alt="Project 5 Image"
+                        class="w-full h-40 object-cover">
                     <div class="project-content p-4">
                         <h3 class="text-lg dark:text-black">Sliding Crossword</h3>
-                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Flutter</span></p>
+                        <p class="tags text-sm text-gray-400 mt-2 dark:text-gray-600"><span
+                                class="bg-gray-700 py-1 px-2 rounded dark:bg-gray-500">Flutter</span></p>
                     </div>
                 </a>
             </div>
@@ -164,42 +200,45 @@ document.getElementById("theme-toggle").addEventListener("click", function () {
 
 </html>
 
-  
+
 /* style.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
+font-family: "Inter", sans-serif;
 }
 
 .wave {
-  display: inline-block;
-  animation: wave-animation 2s infinite;
+display: inline-block;
+animation: wave-animation 2s infinite;
 }
 
 @keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+0% {
+transform: rotate(0deg);
 }
+10% {
+transform: rotate(14deg);
+}
+20% {
+transform: rotate(-8deg);
+}
+30% {
+transform: rotate(14deg);
+}
+40% {
+transform: rotate(-4deg);
+}
+50% {
+transform: rotate(10deg);
+}
+60% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(0deg);
+}
+}
+
+
+//blog ard

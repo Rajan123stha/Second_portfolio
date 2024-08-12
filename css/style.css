@@ -55,6 +55,13 @@ body.light .experience-card {
   border: 1px solid #302f2f;
   border-radius: 10px; //* White border */
 }
+/* body.light .theme-option,
+body.ligh.dropdown-content {
+  color: #121212;
+} */
+.text-black {
+  color: black;
+}
 
 body.dark {
   background-color: #121212;
@@ -105,6 +112,37 @@ body.dark .experience-card {
   border: 1px solid #ffffff;
   border-radius: 10px; /* White border */
 }
+/* tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Adjust this value to control the distance above the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevent text from wrapping */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+body.dark .tooltip .tooltiptext {
+  background-color: rgb(247, 243, 243);
+  color: #080808;
+}
 
 .wave {
   display: inline-block;
@@ -137,6 +175,8 @@ body.dark .experience-card {
     transform: rotate(0deg);
   }
 }
+/* style.css */
+
 /* style.css  footer*/
 body.light .bg-dark-footer {
   background-color: #f7f0f0;
@@ -156,3 +196,10 @@ footer .social-icons a:hover {
 }
 
 /* Additional existing styles */
+
+/* current page styling*/
+.current-menu-item a {
+  border-bottom: #0000ff 2px solid;
+  padding: 2px;
+  padding-bottom: 5px;
+}
