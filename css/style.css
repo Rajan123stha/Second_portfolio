@@ -112,6 +112,10 @@ body.dark .experience-card {
   border: 1px solid #ffffff;
   border-radius: 10px; /* White border */
 }
+
+body.dark .sidebar {
+  color: #ffffff;
+}
 /* tooltip */
 .tooltip {
   position: relative;

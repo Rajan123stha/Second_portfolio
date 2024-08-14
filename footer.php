@@ -19,10 +19,14 @@
         </p>
     </div>
 </footer>
+
+
 <script>
     window.imageBasePath = "<?php echo get_template_directory_uri(); ?>/image/";
 </script>
 <script src="<?php echo get_template_directory_uri(); ?>/JS/script.js"></script>
+
+
 </body>
 
 </html>
